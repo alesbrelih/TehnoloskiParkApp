@@ -1,0 +1,308 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3BA31456-E5BD-4EF4-AFEB-BB0DF739139C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>pTpApp</RootNamespace>
+    <AssemblyName>pTpApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\ljiech\Desktop\PTP\instaled\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>FEBA474AF73F88C6CAF0DE5A57E4953BE268958F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>pTpApp_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NetOffice">
+      <HintPath>..\packages\NetOffice.Core.Net45.1.7.2.0\lib\net45\NetOffice.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="OfficeApi">
+      <HintPath>..\packages\NetOffice.Core.Net45.1.7.2.0\lib\net45\OfficeApi.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="OutlookApi">
+      <HintPath>..\packages\NetOffice.Outlook.Net45.1.7.2.0\lib\net45\OutlookApi.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.93.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.93.0\lib\net45\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VBIDEApi">
+      <HintPath>..\packages\NetOffice.Core.Net45.1.7.2.0\lib\net45\VBIDEApi.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clanstvo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Clanstvo.Designer.cs">
+      <DependentUpon>Clanstvo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Najem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Najem.Designer.cs">
+      <DependentUpon>Najem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NovaOseba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NovaOseba.Designer.cs">
+      <DependentUpon>NovaOseba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NovaPotencialna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NovaPotencialna.Designer.cs">
+      <DependentUpon>NovaPotencialna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NovaStranka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NovaStranka.Designer.cs">
+      <DependentUpon>NovaStranka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NovoPodjetje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NovoPodjetje.Designer.cs">
+      <DependentUpon>NovoPodjetje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Partner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Partner.Designer.cs">
+      <DependentUpon>Partner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PregledOseba.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PregledOseba.Designer.cs">
+      <DependentUpon>PregledOseba.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PregledPodjetje.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PregledPodjetje.Designer.cs">
+      <DependentUpon>PregledPodjetje.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PregledStranka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PregledStranka.Designer.cs">
+      <DependentUpon>PregledStranka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Razredi.cs" />
+    <Compile Include="UrediOsebo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrediOsebo.Designer.cs">
+      <DependentUpon>UrediOsebo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UrediStranko.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrediStranko.Designer.cs">
+      <DependentUpon>UrediStranko.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XObjects\DBmodels\DBconn.cs" />
+    <Compile Include="XObjects\OutLook\Mail.cs" />
+    <Compile Include="XObjects\Tables\TableModels.cs" />
+    <EmbeddedResource Include="Clanstvo.resx">
+      <DependentUpon>Clanstvo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Najem.resx">
+      <DependentUpon>Najem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NovaOseba.resx">
+      <DependentUpon>NovaOseba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NovaPotencialna.resx">
+      <DependentUpon>NovaPotencialna.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NovaStranka.resx">
+      <DependentUpon>NovaStranka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NovoPodjetje.resx">
+      <DependentUpon>NovoPodjetje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Partner.resx">
+      <DependentUpon>Partner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PregledOseba.resx">
+      <DependentUpon>PregledOseba.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PregledPodjetje.resx">
+      <DependentUpon>PregledPodjetje.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PregledStranka.resx">
+      <DependentUpon>PregledStranka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UrediOsebo.resx">
+      <DependentUpon>UrediOsebo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrediStranko.resx">
+      <DependentUpon>UrediStranko.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DB\pTpUpdate.sqlite" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="pTpApp_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="x64\SQLite.Interop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="x86\SQLite.Interop.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>7</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Outlook">
+      <Guid>{00062FFF-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>9</VersionMajor>
+      <VersionMinor>5</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
